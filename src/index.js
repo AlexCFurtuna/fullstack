@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import ReactDOM from 'react-dom'
-import './index.css';
+import Exercises from './Exercises'
+import './index.css'
 
 const App = (props) => {
   const [value, setValue] = useState(10)
@@ -73,6 +74,9 @@ const App = (props) => {
         <Button onClick={() => setValue(1000)} text={'1000'} />
         <Button onClick={() => setToValue(0)} text={'0'} />
         <Button onClick={() => setToValue(value + 1)} text={"+1"} />
+      </div>
+      <div className="exercises boxes">
+        <Exercises />
       </div>
     </div>
 
